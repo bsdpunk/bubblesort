@@ -1,4 +1,4 @@
-
+#!/bin/bash
 HUNDRED=$(for i in {1..1000}; do printf "$RANDOM "; done)
 
 
@@ -21,4 +21,4 @@ printf "R," >> time.log
 printf "Node," >> time.log
     { time node bubble.js $HUNDRED; } 2>&1 | grep real | grep -o '[0-9]\+\.[0-9]\+' >> time.log
 
-
+echo $HUNDRED >> time.log
