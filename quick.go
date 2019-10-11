@@ -2,7 +2,7 @@ package main
 
 import (
 	"bufio"
-	//	"fmt"
+	"fmt"
 	"math/rand"
 	"os"
 	"strconv"
@@ -53,6 +53,6 @@ func quicksort(a []int) []int {
 
 func main() {
 	toBeSorted := scanner()
-	//fmt.Println(quicksort(toBeSorted))
+	fmt.Println(quicksort(toBeSorted))
 	quicksort(toBeSorted)
 }
